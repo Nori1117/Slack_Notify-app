@@ -1,0 +1,2 @@
+PATH=/usr/local/bin:/bin:/Users/hoge/.pyenv/versions/anaconda3-1.5.1/bin/
+5 2 1 6 * cd /Users/tsunodanoriaki/Slack_notify/check_web.py 2>> error.txt
