@@ -52,7 +52,7 @@ def extract_update_article(columns):
     # config更新
     update_recent_table(recent_table)
     if table_list == []:
-        return [["更新記事はありません", "https://apartner-nakameguro.cbiz.co.jp/list_secret/index-invest.php"]]
+        return [["更新記事はありません", ""]]
     return table_list
 
 
@@ -60,4 +60,4 @@ if __name__ == "__main__":
     columns = extract_pick_up()
     url = extract_url(columns[0])
     table_list = extract_update_table(columns)
-    slack_notify(text_="---投資物件最新記事---", list_=table_list)
+    slack_notify(text_="------", list_=table_list)
